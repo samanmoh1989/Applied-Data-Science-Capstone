@@ -97,7 +97,7 @@ def update_scatter(selected_site, payload_range):
         (spacex_df['Payload Mass (kg)'] <= high)
     ]
 
-    # اگر سایت خاصی انتخاب شده باشد، بیشتر فیلتر کن
+  
     if selected_site != 'ALL':
         df = df[df['Launch Site'] == selected_site]
         title = f'Payload vs. Outcome for {selected_site} (kg {low}–{high})'
